@@ -11,8 +11,10 @@
         <p style="font-size: 20px;">Here are some of my favorite movies!</p>
         <nav>
             <a href="index.html" style="font-size: 18px;">Home</a> |
-            <a href="404.html" style="font-size: 18px;">404 Page</a>
+            <a href="404.html" style="font-size: 18px;">404 Page</a> |
+            <a href="hobbies.html" style="font-size: 18px;">Hobbies</a>
         </nav>
+        <marquee style="font-size: 18px; color: darkblue; margin-top: 20px;">Welcome to my favorite movies page! Enjoy browsing!</marquee>
         <ul style="font-size: 18px;">
             <li>The Lion King</li>
             <li>Frozen</li>
@@ -21,9 +23,33 @@
         <section>
             <h2 style="font-size: 24px;">About Me</h2>
             <p style="font-size: 18px;">Hi! My name is Rani Mishra. I am a beginner in web development, and this is my first attempt at creating a website. I love movies, pink colors, and experimenting with new things. I also adore cats and dream of having one someday!</p>
-            <img src="https://i.pinimg.com/736x/4f/16/08/4f1608fde265e925c59001d7c3c97ff1.jpg" alt="My Dream Cat" style="width: 300px; margin-top: 20px;">
-            <p style="font-size: 16px;">My Dream Cat</p>
+            <blockquote style="font-size: 18px; margin-top: 20px; color: darkgreen;">
+                "Movies are a doorway to a world of imagination and creativity."
+            </blockquote>
+            <figure style="margin-top: 20px; text-align: center;">
+                <img src="https://i.pinimg.com/736x/4f/16/08/4f1608fde265e925c59001d7c3c97ff1.jpg" alt="My Dream Cat" style="width: 300px;">
+                <figcaption style="font-size: 16px;">This is the cat I dream of having someday!</figcaption>
+            </figure>
+            <p style="font-size: 18px; margin-top: 20px;">My Movie Rating:</p>
+            <meter value="8" min="0" max="10" style="width: 300px;">8/10</meter>
             <p style="font-size: 16px;">Check out the source code of this website here: <a href="https://github.com/gameof96/my-website" target="_blank">GitHub Repository</a></p>
+            <details style="margin-top: 20px; font-size: 18px;">
+                <summary>Click to learn more about my favorite movies</summary>
+                <p>I love animated movies like The Lion King and Frozen because they bring back childhood memories. Harry Potter is my favorite fantasy series!</p>
+            </details>
+            <p style="font-size: 18px; margin-top: 20px;">Website Completion Progress:</p>
+            <progress value="70" max="100" style="width: 300px;"></progress>
+            <h3 style="font-size: 22px; margin-top: 20px;">Top 3 Movies</h3>
+            <ol style="font-size: 18px; margin-top: 10px;">
+                <li>The Shawshank Redemption</li>
+                <li>Inception</li>
+                <li>Interstellar</li>
+            </ol>
+            <p style="font-size: 18px; margin-top: 20px;">Current Year: <time id="currentYear"></time></p>
+            <script>
+                document.getElementById('currentYear').textContent = new Date().getFullYear();
+            </script>
+            <p style="font-size: 18px; margin-top: 20px;">Tip: Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to search for your favorite movie on this page!</p>
         </section>
     </div>
     <footer style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif; font-size: 14px;">
